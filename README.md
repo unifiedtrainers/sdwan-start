@@ -37,25 +37,24 @@ To use this application you will need:
 # Install and Setup
 
 Clone the code to your local machine.
+git clone https://github.com/unifiedtrainers/sdwan-start.git
+cd sdwan-start
 
-`git clone https://github.com/ai-devnet/Getting-started-with-Cisco-SD-WAN-REST-APIs.git
-cd Getting-started-with-Cisco-SD-WAN-REST-APIs`
 
 Setup Python Virtual Environment (requires Python 3.6+)
 
-`python3.6 -m venv venv
-source venv/bin/activate
+python3.6 -m venv venv source venv/bin/activate
 pip install -r requirements.txt`
+pip install tabulate
 
 Setup local environment variables for your Cisco SD-WAN fabric. Provide the info for your Cisco SD-WAN environment.
 
 Examples:
 
-`export SDWAN_IP=10.10.30.190`
+set SDWAN_IP=labs1.unifiedtrainers.com
+set SDWAN_USERNAME=unifiedtrainers.com
+set SDWAN_PASSWORD=[getfromwebsite]
 
-`export SDWAN_USERNAME=admin`
-
-`export SDWAN_PASSWORD=admin`
 
 # Using the application
 
