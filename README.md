@@ -20,11 +20,6 @@ it provides. Secondly is to help IT operations teams that are managing Cisco SD-
 
 The main application is a CLI tool that users can see a list of the devices that are part of the fabric, the configuration templates, which devices are associated to which templates and also gives the option to attach and detach configuration templates to specific devices.
 
-`Example usage:
-
-./sdwan.py attach --template TemplateID --target TargetID --hostname
-devnet01.cisco.com    --sysip 1.1.1.1 --loopip 2.2.2.2/24 --geip
-3.3.3.3/24 --siteid 999`
 
 # Requirements
 
@@ -44,7 +39,9 @@ cd sdwan-start
 Setup Python Virtual Environment (requires Python 3.6+)
 
 python3.6 -m venv venv source venv/bin/activate
+
 pip install -r requirements.txt`
+
 pip install tabulate
 
 Setup local environment variables for your Cisco SD-WAN fabric. Provide the info for your Cisco SD-WAN environment.
@@ -52,7 +49,9 @@ Setup local environment variables for your Cisco SD-WAN fabric. Provide the info
 Examples:
 
 set SDWAN_IP=labs1.unifiedtrainers.com
+
 set SDWAN_USERNAME=unifiedtrainers.com
+
 set SDWAN_PASSWORD=[getfromwebsite]
 
 
